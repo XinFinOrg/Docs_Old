@@ -63,7 +63,7 @@ A very important aspect of a distributed databases is the network architecture. 
  
 Fully public blockchains like Bitcoin and Ethereum rely on a certain number of long term stable nodes. Consortium blockchains are similarly structured but with more selective inclusion clauses and centralization is a not an inherently undesirable quality in blockchain architectures. Enterprises depend heavily on centralization and it may be hard to make a blanket case for decentralization across regulated fiduciary institutions.  
 
-<figure 1>
+![alt text][fig1]
 
 ## 2.3 Hybrid Network Architecture 
  
@@ -91,7 +91,7 @@ The asset forfeiture and close vigilance on additions to the XDC blockchain mimi
 
 This section outlines the individual components of the XDC protocol. In the following sections, we have outlined the different components of the protocol that make up different type of nodes on the XDC blockchain. Certain nodes will require fewer components from the protocol than other depending on the functionality necessary.  
 
-<figure 2>
+![alt text][fig2]
 
 ### 2.4.1 Administration Manager 
 
@@ -103,7 +103,7 @@ The Administration Manager lives in the heart of the XDC protocol. The activity 
 
 The Data Model is the part of the Administration Manager where the structure of the data that is to be stored on the blockchain is defined. The public state of blockchain has a predefined data model that is stored in here. The private state of the blockchain can inherit this data model extant, make changes to it, or create an entire new structure according to the use case.  
 
-<figure 3>
+![alt text][fig3]
 
 #### 2.4.1.2 Messaging
 
@@ -120,7 +120,7 @@ The Smart Contract Manager executes the appropriate contracts at the right time.
 
 The Message Conduit connects the various parts of the protocol with each other. It connects the Augur Service and the Resource Manager with the Smart Contract Manager to ensure external conditions critical to execution of smart contracts are securely transmitted and that they are executed correctly. It also connects the Network Manager with the Administration Manager to carry out a number of state modification tasks including transactions.
 
-<figure 4>
+![alt text][fig4]
 
 ### 2.4.4 Network Manager 
 
@@ -158,25 +158,25 @@ Described below are the different kinds of nodes that exist on the XDC network a
 
 Full nodes will possess the entire XDC protocol. Certain Full nodes will possess even the transaction history of the entire network in addition to the state. These nodes will be controlled by consortium members and come with a number of caveats. Full nodes will have to purchase (and hold) a fixed equity of the XDC to be able to host the full XDC protocol. One major advantage to this design choice is that no Full Node or groups of Full Nodes can gain control over the network. In order to possess more than 51% of the public network, Full Nodes must acquire more and more XDC. This drives up the price of the XDC and ensures that it is financially impossible for a Full node cartel to control a majority of the network. 
 
-<figure 5>
+![alt text][fig5]
 
 ### 2.6.2 Reference Node 
 
 The second kind of nodes are Reference nodes which exist to transfer transactions to the transaction pool. These nodes do not have access to the entire blockchain and play only a minor verification role in that they ensure the structure of the transaction is according to protocol. The transactions are verified and added to the blockchain by the Full nodes. 
 
-<figure 6>
+![alt text][fig6]
 
 ### 2.6.3 Light Node 
 
 The third kind of node is a Light Node. A Light node is implemented in the private networks that don’t participate in achieving consensus through the voting process. They store the relevant private state in their local storage and can access the public state and the transaction history from Full Nodes.  
 
-<figure 7>
+![alt text][fig7]
 
 ### 2.6.4 Auditing Node 
 
 The fourth kind of node is an Auditing Node. This node has other parts of the protocol, other than the Chain Manager, but they are very limited in their functionality. The Auditing Node allows for the access to the public and private state of the blockchain for the purposes of regulation, auditing, or reconciliation with legacy systems.  
 
-<figure 8>
+![alt text][fig8]
 
 ## 2.7 Design Considerations
 
@@ -217,19 +217,19 @@ Party A accesses the marketplace where service providers, Party B advertises its
 
 4. The Smart Contract Manager initializes a monitoring service via the Resource Manager and the Augur Service. The XDC that is being used to the purchase the equipment is transferred to Party B. In the case that a loan is required for the purchase, the required amount of XDC is transferred from Party C (the   financiers) to Party B as depicted in Figure 9. 
 
-<figure 9>
+![alt text][fig9]
 
 5. The state of the blockchain is updated through the Administration Manager by sending the transaction details through the Conduit Service to the Chain Manager and the Network Manager. If necessary, the Network Manager intimates the remaining network that the public state needs to be updated   or the Chain Manager updates the private state and updates the public state through the Network Manager. 
 
 6. The Network Manager broadcasts the pertinent information to the relevant actors across the network. An Escrow smart contract is initiated by the Smart Contract Manager and a percentage of XDC are stored in its account in order to underwrite the investment to protect against non-payment or term violations as depicted in Figure 10.
 
-<figure 10>
+![alt text][fig10]
 
 7. The Smart Contract Manager sends the escrow details to the Administration Manager. 
 
 8. The Administration Manager updates the private state, broadcasts the public state update through the Network Manager, and to the actors involved in the private state transaction. A further service is started in the Resource Manager that monitors the physical location and activity of the equipment purchased. In the face of terms violation preventive smart contracts, in this case the Escrow smart contract, initiate payout to the financiers according to the terms of the agreement as depicted in Figure 11. 
 
-<figure 11>
+![alt text][fig11]
 
 9. The Resource Manager updates the Smart Contract Manager with conditions being fulfilled or violated. Which in turn updates the Administration Manager. 
 
@@ -237,7 +237,7 @@ Party A accesses the marketplace where service providers, Party B advertises its
 
 11. The loan amount is repaid and the Smart Contract terminates after all the payouts are distributed amongst the constituents as depicted in Figure 12. 
 
-<figure 12>
+![alt text][fig12]
 
 # 4. Blockchain applications 
  
@@ -275,3 +275,25 @@ The Bitcoin protocol brought with it grand visions of a decentralized and secure
 The XDC blockchain attempts to solve this problem of secluded ecosystems with highly secure and robust interoperability powered by the protocol described in this paper. Interoperability here refers to both within the XDC protocol and outside of it. Within the XDC ecosystem, public and private states interact with each other in specific ways. Outside of XDC ecosystem, interoperability with public blockchains allows for the exchange of XDC tokens from within the protocol itself.  
 
 The XDC blockchain aims to bring together the significant advantages of public blockchains and the necessary restrictions of permissioned blockchains to create an ecosystem that is enterprise ready. The tiered membership rules for participation in the XDC network allows for robust mechanisms in maintaining network integrity. In addition, controlling network participation, creates an environment of standardized relationships that allow for the focus to be on what is important: business.  
+
+# References: 
+
+1. Nakamoto, Satoshi. Bitcoin: A Peer-to-Peer Electronic Cash System: Cryptography Mailing List, 2008. 
+2. Swan, Melanie. Blockchain: Blueprint For a New Economy: Sebastopol, O’Reilly, 2015. 
+3. Copeland, Christopher and Zhong, Hongxia. Tangaroa: a Byzantine Fault Tolerant Raft: Stanford, 2015. 
+4. Buterin, Vitalik. Ethereum: Platform Review, Opportunities and Challenges for Private and Consortium Blockchains. 2016. 
+5. Voell, David and Nielsen, Patrick: Quorum whitepaper v0.1: https://github.com/jpmorganchase, 2016.
+
+
+[fig1]: https://github.com/XinFinorg/Documentation/images/Fig1.jpg "a"
+[fig2]: https://github.com/XinFinorg/Documentation/images/Fig2.jpg "b"
+[fig3]: https://github.com/XinFinorg/Documentation/images/Fig3.jpg "c"
+[fig4]: https://github.com/XinFinorg/Documentation/images/Fig4.jpg "d"
+[fig5]: https://github.com/XinFinorg/Documentation/images/Fig5.jpg "e"
+[fig6]: https://github.com/XinFinorg/Documentation/images/Fig6.jpg "f"
+[fig7]: https://github.com/XinFinorg/Documentation/images/Fig7.jpg "g"
+[fig8]: https://github.com/XinFinorg/Documentation/images/Fig8.jpg "h"
+[fig9]: https://github.com/XinFinorg/Documentation/images/Fig9.jpg "i"
+[fig10]: https://github.com/XinFinorg/Documentation/images/Fig10.jpg "j"
+[fig11]: https://github.com/XinFinorg/Documentation/images/Fig11.jpg "k"
+[fig12]: https://github.com/XinFinorg/Documentation/images/Fig12.jpg "l"
