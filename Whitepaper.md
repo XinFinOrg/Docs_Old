@@ -264,6 +264,26 @@ Our solution to this problem is straightforward. Since the XDC ecosystem belongs
 ## 4.5 ‘Marketplace of smart contracts’ 
  
 As the XDC blockchain gains maturity, we envision a regulated marketplace with a well-defined process of security auditability. Smart contract writing firms will undertake creation of standardized contracts for general financial use cases but will also cater to more customized applications. Entirely separate auditing firms will ensure the infallibility of these smart contracts. Our aim is to ensure hacks like the DAO don't happen on the XDC blockchain. 
+
+# 5. Public Cryptocurrency integration with the XinFin Hybrid Blockchain
+
+The XinFin Hybrid blockchain’s underlying token is called the XDC or XinFin Digital Contract. The XDC token can be traded freely on the public state of the XinFin blockchain. Retail users or institutions can operate accounts that can buy, sell, or trade XDCs through the wallet application. 
+
+The XinFin blockchain also has advanced smart contracting capabilities and highly customizable private sub-networks that act as permissioned blockchains. While the XDC token can be integrated with private or public DApps(to act as a settlement layer), the team here at XinFin believes that interoperability with other blockchains is a very real need in an ecosystem rife with monolithic cryptocurrencies and tokens.
+
+Our version of interoperability includes the ability for institutions or individuals to create DApps, smart contracts, or custom tokens, while accepting or paying in the cryptocurrency of their choice. What this means is that a DApp or smart contract created on the XinFin Hybrid blockchain can make use of highly liquid existing cryptocurrencies like Bitcoin(and Bitcoin forks), Ethereum, Ripple, etc.
+
+![alt text][fig13]
+
+There are significant advantages to this relationship between the XDC blockchain and public cryptocurrencies. For Bitcoin, Bitcoin Cash, or Ripple, the absence of a smart contracting layer makes possible usecases very limited. By plugging into the XDC blockchain, holders of these cryptocurrencies can leverage fast, secure, and scalable smart contracts(and DApps) for their more involved usecases.
+
+Even for cryptocurrencies like Ethereum that have built in smart contracting capabilities, running the DApps on the XDC blockchain is a wiser choice. This is because the Ethereum blockchain, like most other popular cryptocurrencies, have become victims of their rampant success. Their networks are getting bogged down by more transactions than they can handle and rising costs make high frequency transactions impossible. For example, IoT based applications are impossible to run on the Ethereum public blockchain due to the high cost per transaction and the low throughput(~15 tps) of the network.
+
+By using the highly secure(hybrid-permissioned), scalable(~300 tps), fast(<1 sec block creation time) XinFin blockchain, these cryptocurrencies can be used to provide the liquidity for various use cases while the XDC network acts as a smart contracting and settlement layer. 
+
+The cryptocurrencies we will be supporting will be revealed shortly. We plan to integrate all major public cryptocurrencies with the XDC blockchain to allow for a kind of interoperability that is sorely needed to realize the decentralized utopia that blockchain technology offers.
+
+
 Page Break
  
 # Conclusion 
@@ -297,3 +317,4 @@ The XDC blockchain aims to bring together the significant advantages of public b
 [fig10]: https://github.com/XinFinorg/Documentation/images/Fig10.jpg "j"
 [fig11]: https://github.com/XinFinorg/Documentation/images/Fig11.jpg "k"
 [fig12]: https://github.com/XinFinorg/Documentation/images/Fig12.jpg "l"
+[fig13]: https://github.com/XinFinorg/Documentation/images/Fig13.png "m"
