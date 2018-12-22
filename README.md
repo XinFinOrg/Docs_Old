@@ -4,4 +4,12 @@
 
 XDC protocol is architected to support smart contracts layer, KYC/AML layer and price stability using it's hedge pool for existing cryptocurrencies like Bitcoin BTC, Bitcoincash BCH, Litecoin LTC and Ripple XRP on it's [TradeFinex.org](http://www.tradefinex.org) platform. The XDC protocol also supports FIAT payment methods and will support upcoming nationally issued cryptocurrencies.
 
-* [Exchange List](ExchangeList.md)
+## XDC Ecosystem
+
+
+![XDC Ecosystem][fig1]
+
+
+### [Exchange List](ExchangeList.md)
+
+[fig1]: /images/xdc_ecosystem.jpg "a"
