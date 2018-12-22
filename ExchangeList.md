@@ -16,6 +16,7 @@ Below are the List of Exchanges where XDC & XDCe Listed for Trading.
 |Indodax  | [XDCE-IDR](https://indodax.com/market/XDCEIDR) |
 |LATOKEN  | [XDCE-BTC](https://wallet.latoken.com/market/Crypto/BTC/XDCE-BTC) |
 |LATOKEN  | [XDCE-ETH](https://wallet.latoken.com/market/Crypto/BTC/XDCE-ETH) |
+|LATOKEN  | [XDCE-USDT](https://wallet.latoken.com/market/Crypto/BTC/XDCE-BTC) 
 | Bancor Network  | [XDCE-BNT](https://www.bancor.network/) |
 | IDEX  | [XDCE-ETH](https://idex.market/eth/xdce) |
 | DOBI trade  | [XDCE-ETH](https://www.dobitrade.com/trade/xdce_eth) |
