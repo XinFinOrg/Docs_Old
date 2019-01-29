@@ -1,4 +1,4 @@
-## XinFin Listed Exchanges
+## XinFin XDC and XDCE Listed Exchanges List
 
 Below are the List of Exchanges where XDC & XDCe Listed for Trading.
 
