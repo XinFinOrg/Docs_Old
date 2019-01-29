@@ -32,7 +32,7 @@ Below are the List of Exchanges where XDC & XDCe Listed for Trading.
 
 This section provides you with details required to [list XinFin-XDCe with exchanges](https://xinfin.org/exchange-listing-resource.php)
 
-### A contributing guideline like for this page;
+### A contributing guideline like for this section;
 
     Fork it 
     Create your feature branch 
