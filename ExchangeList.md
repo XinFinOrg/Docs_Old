@@ -27,3 +27,7 @@ Below are the List of Exchanges where XDC & XDCe Listed for Trading.
 | GetBTC | [XDCE-BTC](https://getbtc.org/buy-sell.php?currency=xdce) |
 | EtherDelta  | [XDCE-ETH](https://etherdelta.com/#XDCE-ETH) |
 
+
+### XDCE Exchange Listing Resource
+
+This section provides you with details required to [list XinFin-XDCe with exchanges](https://xinfin.org/exchange-listing-resource.php)
